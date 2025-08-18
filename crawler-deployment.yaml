@@ -18,5 +18,5 @@ spec:
       - name: synergychat-crawler
         image: bootdotdev/synergychat-crawler:latest
         envFrom:
-          configMapKeyRef:
-            name: synergychat-crawler-configmap
+          - configMapRef:
+              name: synergychat-crawler-configmap
